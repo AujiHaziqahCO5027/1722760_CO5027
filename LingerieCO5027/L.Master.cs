@@ -7,7 +7,7 @@ using System.Web.UI.WebControls;
 
 namespace LingerieCO5027
 {
-    public partial class SiteMaster : MasterPage
+    public partial class L : System.Web.UI.MasterPage
     {
         protected void Page_Load(object sender, EventArgs e)
         {

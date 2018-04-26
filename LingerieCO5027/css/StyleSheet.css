@@ -1,0 +1,141 @@
+﻿body {
+    margin: 0;
+    padding: 0;
+   
+}
+
+.nav {
+    
+    padding: 15px;
+    list-style-type: none;
+    text-align: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+    .nav li {
+        display: inline-block;
+        font-size: 20px;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+h1 {
+    font-size: 2.5em;
+    text-align: center;
+}
+
+h2 {
+    font-size: xx-large;
+    text-align: center;
+}
+
+.gallery {
+    margin: 5px;
+    border: 1px solid #ccc;
+    float: left;
+    width: 180px;
+    padding-left: 20px;
+    padding-right: 50px;
+}
+
+div.gallery:hover {
+    border: 1px solid #777;
+}
+
+div.gallery img {
+    width: 100%;
+    height: auto;
+}
+
+div.desc {
+    padding: 15px;
+    text-align: center;
+}
+
+div.banner {
+    padding: 10px;
+    text-align: center;
+    background-image: url('../randomimage/newarrivalbridalslide1.png');
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    height: 324px;
+}
+
+.galleryslideshow {
+    width: inherit;
+    position: relative;
+    margin: auto;
+    top: 24px;
+    left: 58px;
+}
+
+.slideshowphoto {
+    display: none;
+}
+
+footer {
+    text-align: center;
+    background-color: #ffffff;
+    display: block;
+    bottom: 0;
+    width: 100%;
+    height: 60px;
+    font-family: Calibri;
+    font-size: 20px;
+    color: #808080;
+}
+.centertable {
+    margin-left: auto;
+    margin-right: auto;
+}
+.container {
+    margin-left: auto;
+    margin-right: auto;
+    right: 0;
+    max-width: 100px;
+    padding: 10px;
+    background-color: transparent;
+    font-family: Arial, Helvetica, sans-serif;
+ 
+}
+
+/* Full-width input fields */
+input[type=text], input[type=password] {
+    width: 100%;
+    padding: 15px;
+    margin: 5px 0 22px 0;
+    border: none;
+    background: #f1f1f1;
+}
+
+    input[type=text]:focus, input[type=password]:focus {
+        background-color: #ddd;
+        outline: none;
+    }
+
+/* Set a style for the submit button */
+.btnSendE {
+    background-color: #4CAF50;
+    color: white;
+    padding: 16px 20px;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    opacity: 0.9;
+}
+
+    .btn:hover {
+        opacity: 1;
+    }
+.bg-img {
+    /* The image used */
+    background-image: url('../randomimage/background.jpg');
+
+    /* Control the height of the image */
+    min-height: 380px;
+
+    /* Center and scale the image nicely */
+    background-position: left;
+    background-repeat: no-repeat;
+    background-size: cover;
+}

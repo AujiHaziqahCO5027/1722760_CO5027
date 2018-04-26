@@ -1,0 +1,54 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="L.master.cs" Inherits="LingerieCO5027.L" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title>Lingerie Shop</title>
+    <link href="css/StyleSheet.css" rel="stylesheet" type="text/css" />
+   
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+   
+</head>
+    
+<body>
+<div id="header">
+    </div>
+    <form id="form1" runat="server">
+    <h1>S i l k e n     E l e g a n c e </h1>
+    <h2>Nothing is more sexy than Confidence</h2>
+        <div class="banner"></div>
+<div class="nav">
+      <ul>
+<li><a href="~/Default.aspx" runat="server">Lingerie</a></li>
+
+<li><a href="~/Bras.aspx" runat="server">Bra & Stockings</a></li>
+
+<li><a href="~/Panties.aspx" runat="server">Panties</a></li>
+
+<li><a href="~/login.aspx" runat="server">Register & Login</a></li>
+
+ <li><a href="~/Contact.aspx" runat="server">Contact Us</a></li>
+
+ <li><a href="~/Admin/Index.aspx" runat="server">Admin</a></li>
+ </ul>
+    </div>
+     
+       
+        
+
+<div>
+<asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+</asp:ContentPlaceHolder>
+
+            <footer>
+                <b>&copy; Silken Elegance 2018</b>
+        
+
+
+            </footer>
+        </div>
+    </form>
+</body>
+</html>

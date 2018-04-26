@@ -11,7 +11,7 @@ namespace LingerieCO5027
 {
 
 
-    public partial class Default
+    public partial class Panties
     {
     }
 }
