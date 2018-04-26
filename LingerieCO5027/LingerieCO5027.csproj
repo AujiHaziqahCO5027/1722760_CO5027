@@ -179,6 +179,7 @@
     <Content Include="L.Master" />
     <None Include="Properties\PublishProfiles\CustomProfile.pubxml" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
+    <Content Include="location.js" />
     <Content Include="login.aspx" />
     <Content Include="Panties.aspx" />
     <Content Include="pantiesimage\DARLA PEARL AND LACE PANTY.jpg" />
@@ -191,15 +192,19 @@
     <Content Include="pantiesimage\VERONIKA LACE NAUGHTY KNICKER.jpg" />
     <Content Include="randomimage\background.jpg" />
     <Content Include="randomimage\CAT-BRAS-GLOBAL.jpg" />
+    <Content Include="randomimage\LYDIA ROSE BIKINI.jpg" />
     <Content Include="randomimage\newarrivalbridalslide1.png" />
     <Content Include="randomimage\openstrappypanty1.jpg" />
     <Content Include="randomimage\openstrapypanty2.jpg" />
+    <Content Include="randomimage\STEFFI GARTERED PANTY.jpg" />
     <Content Include="randomimage\strappycheekygarterpanty1.jpg" />
     <Content Include="randomimage\strappycheekygarterpanty2.jpg" />
     <Content Include="randomimage\strappycheekypanty1.jpg" />
     <Content Include="randomimage\strappycheekypanty2.jpg" />
     <Content Include="randomimage\strappycheekypanty3.jpg" />
     <Content Include="randomimage\strappycheekypanty4.jpg" />
+    <Content Include="randomimage\TATIANA PEARL NAUGHTY KNICKER.jpg" />
+    <Content Include="randomimage\TatianaPearlNaughtyKnicker.jpg" />
     <Content Include="randomimage\unlinedlacebrawithcutouts1.jpg" />
     <Content Include="randomimage\unlinedlacebrawithcutouts2.jpg" />
     <Content Include="Scripts\bootstrap.js" />

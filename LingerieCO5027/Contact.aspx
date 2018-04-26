@@ -34,8 +34,28 @@
         </div>
 
             
- <h3>Find Us Here:</h3>
-    <div id="googleMap" style="width:700px; height:500px"></div>
+    <h2>Find Us Here:</h2>
+          <div id="map"></div>
 
+          <script>
+              function myMap() {
+                  var myLatLng = { lat: 4.8857309, lng: 114.9316692 };
 
+                  var map = new google.maps.Map(document.getElementById('map'), {
+                      zoom: 15,
+                      center: myLatLng
+                  });
+
+                  var marker = new google.maps.Marker({
+                      position: myLatLng,
+                      map: map,
+                      title: 'Hello!'
+                  });
+
+              }
+              </script>
+ 
+        <div id="googleMap" style="width:700px; height:500px; text-align: left;"></div>
+            <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAJLqlwd0gYQttmKhkV-a6nYripBav2yn0&callback=myMap2"></script>
+ 
 </asp:Content>
