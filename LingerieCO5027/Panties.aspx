@@ -49,7 +49,7 @@
             <td>
 <div class="gallery">
     <img src="randomimage/TatianaPearlNaughtyKnicker.jpg"width="400" height="200" />
-<div class="desc">Veronika Lace Naughty Knicker</div></td>
+<div class="desc">Tatiana Pearl Naughty Knicker</div></td>
 </div>
                      <td>
 <div class="gallery">
