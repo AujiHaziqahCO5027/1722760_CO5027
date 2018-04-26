@@ -1,12 +1,17 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/L.Master" AutoEventWireup="true" CodeBehind="Panties.aspx.cs" Inherits="LingerieCO5027.Panties" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
+    <style type="text/css">
+        .auto-style1 {
+            width: 328px;
+        }
+    </style>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
     <h2 style="color: #FF5050; background-color: #FFFFFF">Sexy Panties</h2>
     <h4 style="text-align: center">Silken Elegance's Lingerie,
         offers the Best Selling Panties, Thongs, Cheekies, Knickers and Naughty Knickers.
 </h4>
-    <table>
+    <table class="center">
   <tr>
 <th>
 <div class="gallery">
@@ -20,7 +25,7 @@
 <div class="desc">Luisa Lou Naughty Bridal Knicker</div></th>
 </div>
 
-          <th>
+          <th class="auto-style1">
 <div class="gallery">
     <img src="pantiesimage/KASEY%20LACE%20NAUGHTY%20KNICKER.jpg" " width="400" height="200" />
 <div class="desc">Kasey Lace Naughty Knicker</div></th>
@@ -39,7 +44,7 @@
 <img src="pantiesimage/DARLA%20PEARL%20AND%20LACE%20PANTY.jpg" width="400" height="200" />
 <div class="desc">Darla Pearl Lace Panty</div></td>
 </div>
-            <td>
+            <td class="auto-style1">
 <div class="gallery">
 <img src="pantiesimage/STEPHANIE%20EYELASH%20LACE%20GARTER%20THONG.jpg" width="400" height="200" />
 <div class="desc">Stephanie Eyelash Lace Garter Thong</div></td>

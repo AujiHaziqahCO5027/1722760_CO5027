@@ -5,23 +5,24 @@
 }
 
 .nav {
-    padding: 15px;
+    padding: 10px;
     list-style-type: none;
     text-align: center;
- 
-    background-color: #fdd9d4;
     font-weight: 700;
-
-    text-transform: uppercase;
-    font-family: 'Trebuchet MS';
-
+    text-decoration: none;
+    font-family: BentonSansBook;
+    
 }
 
     .nav li {
         display: inline-block;
+        text-decoration: none;
         font-size: 20px;
         padding-left: 20px;
         padding-right: 20px;
+    }
+    .nav a {
+        text-decoration: none;
     }
 
 h1 {
@@ -92,49 +93,7 @@ footer {
     font-size: 20px;
     color: #808080;
 }
-.centertable {
-    margin-left: auto;
-    margin-right: auto;
-}
-.container {
-    margin-left: auto;
-    margin-right: auto;
-    right: 0;
-    max-width: 100px;
-    padding: 10px;
-    background-color: transparent;
-    font-family: Arial, Helvetica, sans-serif;
- 
-}
 
-/* Full-width input fields */
-input[type=text], input[type=password] {
-    width: 100%;
-    padding: 15px;
-    margin: 5px 0 22px 0;
-    border: none;
-    background: #f1f1f1;
-}
-
-    input[type=text]:focus, input[type=password]:focus {
-        background-color: #ddd;
-        outline: none;
-    }
-
-/* Set a style for the submit button */
-.btnSendE {
-    background-color: #4CAF50;
-    color: white;
-    padding: 16px 20px;
-    border: none;
-    cursor: pointer;
-    width: 100%;
-    opacity: 0.9;
-}
-
-    .btn:hover {
-        opacity: 1;
-    }
 .bg-img {
     /* The image used */
     background-image: url('../randomimage/background.jpg');
@@ -147,7 +106,7 @@ input[type=text], input[type=password] {
     background-repeat: no-repeat;
     background-size: cover;
 }
-googleMap {
+Map {
     position: absolute;
     border: 2px solid #000;
     width: 700px;
@@ -161,13 +120,76 @@ table, td, th {
 table {
     margin: auto;
     border-collapse: collapse;
-    width: 50%;
+    width: 70%;
     height: 200px;
     position: relative;
+    top: 0px;
+    left: 20px;
+    right: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
 }
 
 td {
     height: 50px;
     vertical-align: bottom;
-    
+    width: 20%;
 }
+table.center {
+    margin-left: auto;
+    margin-right: auto;
+}
+input[type=text], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+}
+
+input[type=submit] {
+    border-style: none;
+    border-color: inherit;
+    border-width: medium;
+background-color: #FF9999;
+    color: white;
+    padding: 12px 20px;
+    cursor: pointer;
+}
+
+    input[type=submit]:hover {
+        background-color: #45a049;
+    }
+
+/* Style the container/contact section */
+.container {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 10px;
+}
+
+/* Create two columns that float next to eachother */
+.column {
+    float: left;
+    width: 93%;
+    margin-top: 6px;
+    padding: 20px;
+    height: 590px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+    .column, input[type=submit] {
+        width: 100%;
+        margin-top: 0;
+    }
+}
+
