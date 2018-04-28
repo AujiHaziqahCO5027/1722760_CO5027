@@ -7,45 +7,21 @@
     </style>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
-  
-    <div class="row">
-     <div class="column">
-         <form action="/action_page.php">
-         <div style="text-align:center">
-     <h2 style="text-align: center">Registeration Form</h2>
-    <p>
-      <p>
-        <asp:Label ID="Label1" runat="server" Text="Username" style="font-weight: 700"></asp:Label></p>
 
-        <asp:TextBox ID="txtname" runat="server" Height="29px" Width="300px"></asp:TextBox>
-    </p>
-
-    <asp:Label ID="Label2" runat="server" Text="Password" style="font-weight: 700"></asp:Label>
-    <p>
-        <asp:TextBox ID="txtpswd" runat="server" Height="29px" Width="300px"></asp:TextBox>
-    </p>
-    <p>&nbsp;</p>
-    <p style="font-weight: 700">
-        <asp:Literal ID="litResult" runat="server"></asp:Literal>
-    </p>
-    <br />
-    <asp:Button ID="btnReg" runat="server" OnClick="btnReg_Click" Text="Register" />
-    </div>
-             </form>
-         </div>
-        </div>
-
-    <div class="row">
-          <div class="column">
-    <h2>Login</h2>
-    <p>&nbsp;</p>
-        
+<table>
+<tbody>
+<tr>
+<th style="height: 32px; width: 217px">Already a Member? SIGN IN</th>
+<th style="height: 32px; width: 212px">Register here! </th>
+             </tr>
+    <tr>
+<td style="width: 200px">
     <p class="auto-style1"><strong>Username</strong></p>
     <p style="text-align: center">
      
         <asp:TextBox ID="txtlognm" runat="server" Height="29px" Width="300px" ></asp:TextBox>
     </p>
-    <p class="auto-style1"><strong>Password</strong></p>
+    <p class="auto-style1"><strong style="text-align: left">Password</strong></p>
     <p style="text-align: center">
         <asp:TextBox ID="txtlogpswd" runat="server" Height="29px" Width="300px"></asp:TextBox>
     </p>
@@ -57,11 +33,37 @@
     <p style="text-align: center">
 
         <asp:Button ID="btnLog" runat="server" Text="Sign In" />
+        </tr>
+    </td>
 
-    </p>
+
+    <td style="width: 200px">
        
-       </div>
-        </div>
- 
+      <p>
+        <asp:Label ID="Label1" runat="server" Text="Username" style="font-weight: 700"></asp:Label></p>
+
+             <p>
+
+        <asp:TextBox ID="txtname" runat="server" Height="29px" Width="300px"></asp:TextBox></p>
+            
+
+    <asp:Label ID="Label2" runat="server" Text="Password" style="font-weight: 700"></asp:Label>
+             </div>
+    <p>
+        <asp:TextBox ID="txtpswd" runat="server" Height="29px" Width="300px"></asp:TextBox>
+    </p>
+    <p style="font-weight: 700" class="auto-style1">
+        <asp:Literal ID="litResult" runat="server"></asp:Literal>
+    </p>
+             <div class="auto-style1">
+    <asp:Button ID="btnReg" runat="server" OnClick="btnReg_Click" Text="Register" />
+            </div>
+        </td>
+    </tbody>
+    </table>
+    </form>
+    
+  
+     
 
 </asp:Content>

@@ -81,6 +81,11 @@ namespace LingerieCO5027
                 }
             }
         }
+
+        protected void txtlogpswd_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
     }
         

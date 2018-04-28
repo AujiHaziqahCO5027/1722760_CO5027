@@ -5,7 +5,7 @@
 
     <div class="container">
   <div style="text-align:center">
-       
+       <div class="r"
        <h2>Contact Us</h2>
     <p><strong>If you have any enquiry, YOU can simply contact us!</strong></p>
          <p><asp:Label ID="LabelName" runat="server" Text="Name" style="font-weight: 700"></asp:Label></p>

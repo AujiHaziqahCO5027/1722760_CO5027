@@ -33,6 +33,7 @@ h1 {
 h2 {
     font-size: xx-large;
     text-align: center;
+    height: 56px;
 }
 
 .gallery {
@@ -120,12 +121,12 @@ table, td, th {
 table {
     margin: auto;
     border-collapse: collapse;
-    width: 70%;
-    height: 200px;
+    width: 43%;
+    height: 329px;
     position: relative;
-    top: 0px;
-    left: 20px;
-    right: 20px;
+    top: 5px;
+    left: 34px;
+    right: 195px;
     padding-left: 10px;
     padding-right: 10px;
 }
@@ -140,12 +141,12 @@ table.center {
     margin-right: auto;
 }
 input[type=text], select, textarea {
-    width: 100%;
     padding: 12px;
     border: 1px solid #ccc;
     margin-top: 6px;
     margin-bottom: 16px;
     resize: vertical;
+    margin-left: 78px;
 }
 
 input[type=submit] {
@@ -172,10 +173,13 @@ background-color: #FF9999;
 /* Create two columns that float next to eachother */
 .column {
     float: left;
-    width: 93%;
-    margin-top: 6px;
+    width: 31%;
+    margin-top: 0px;
     padding: 20px;
-    height: 590px;
+    height: 419px;
+    margin-right: 0px;
+    margin-left: 196px;
+    text-align: left;
 }
 
 /* Clear floats after the columns */
@@ -192,4 +196,8 @@ background-color: #FF9999;
         margin-top: 0;
     }
 }
-
+tbody {
+    display: table-row-group;
+    vertical-align: middle;
+    border-color: inherit;
+}
