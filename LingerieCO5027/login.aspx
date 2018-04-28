@@ -8,14 +8,10 @@
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
 
-<table>
-<tbody>
-<tr>
-<th style="height: 32px; width: 217px">Already a Member? SIGN IN</th>
-<th style="height: 32px; width: 212px">Register here! </th>
-             </tr>
-    <tr>
-<td style="width: 200px">
+
+<h2>Already a Member? SIGN IN</th>
+
+          
     <p class="auto-style1"><strong>Username</strong></p>
     <p style="text-align: center">
      
@@ -33,13 +29,12 @@
     <p style="text-align: center">
 
         <asp:Button ID="btnLog" runat="server" Text="Sign In" />
-        </tr>
-    </td>
+      
+      <br />
+        <br />
 
-
-    <td style="width: 200px">
-       
-      <p>
+        <h2>Register here! </h2>
+      <p class="auto-style1">
         <asp:Label ID="Label1" runat="server" Text="Username" style="font-weight: 700"></asp:Label></p>
 
              <p>
@@ -48,7 +43,7 @@
             
 
     <asp:Label ID="Label2" runat="server" Text="Password" style="font-weight: 700"></asp:Label>
-             </div>
+           
     <p>
         <asp:TextBox ID="txtpswd" runat="server" Height="29px" Width="300px"></asp:TextBox>
     </p>
@@ -61,8 +56,7 @@
         </td>
     </tbody>
     </table>
-    </form>
-    
+  
   
      
 
