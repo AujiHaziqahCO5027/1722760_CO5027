@@ -32,17 +32,17 @@ h1 {
 
 h2 {
     font-size: xx-large;
-    text-align: center;
+    text-align: left;
     height: 56px;
 }
 
 .gallery {
-    margin: 5px;
+    margin: 20px;
     border: 1px solid #ccc;
     float: left;
     width: 180px;
-    padding-left: 20px;
-    padding-right: 50px;
+    padding-left: 90px;
+    padding-right: 90px;
 }
 
 div.gallery:hover {
@@ -146,7 +146,7 @@ input[type=text], select, textarea {
     margin-top: 6px;
     margin-bottom: 16px;
     resize: vertical;
-    margin-left: 78px;
+    margin-left: 1px;
     text-align: center;
 }
 
@@ -197,8 +197,16 @@ background-color: #FF9999;
         margin-top: 0;
     }
 }
-tbody {
-    display: table-row-group;
-    vertical-align: middle;
-    border-color: inherit;
+table, th, td {
+    border: 1px solid #F5B7B1;
+    border-collapse: collapse;
+    margin-left: auto;
+    margin-right: auto;
+    
 }
+
+ td, th {
+    display: table-cell;
+    vertical-align: inherit;
+}
+

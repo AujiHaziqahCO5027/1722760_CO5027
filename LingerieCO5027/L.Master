@@ -10,6 +10,12 @@
     <asp:ContentPlaceHolder ID="head" runat="server">
     </asp:ContentPlaceHolder>
    
+    <style type="text/css">
+        .auto-style1 {
+            text-align: center;
+        }
+    </style>
+   
 </head>
     
 <body>
@@ -17,7 +23,6 @@
     </div>
     <form id="form1" runat="server">
     <h1>S i l k e n     E l e g a n c e </h1>
-    <h2>Nothing is more sexy than Confidence</h2>
         <div class="banner"></div>
 <div class="nav">
       <ul>
@@ -27,11 +32,12 @@
 
 <li><a href="~/Panties.aspx" runat="server">Panties</a></li>
 
-<li><a href="~/login.aspx" runat="server">Register & Login</a></li>
+<li><a href="~/Signin.aspx" runat="server">Register & Login</a></li>
 
  <li><a href="~/Contact.aspx" runat="server">Contact Us</a></li>
 
  <li><a href="~/Admin/Index.aspx" runat="server">Admin</a></li>
+ 
  </ul>
     </div>
      
@@ -43,7 +49,13 @@
 </asp:ContentPlaceHolder>
 
             <footer>
+              
                 <b>&copy; Silken Elegance 2018</b>
+                <p>
+                <a href="http://validator.w3.org/check?uri=referer">Validate HTML</a>
+                <a href="http://jigsaw.w3.org/css-validator/check/referer">Validate CSS</a>
+                <a href="http://achecker.ca/checker/?uri=referer">Check WCAG</a>
+                    </p>
         
 
 

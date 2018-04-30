@@ -10,41 +10,13 @@ using Microsoft.Owin.Security;
 
 namespace LingerieCO5027
 {
-    public partial class login : System.Web.UI.Page
+    public partial class Signin : System.Web.UI.Page
     {
         protected void Page_Load(object sender, EventArgs e)
         {
 
         }
 
-        protected void btnReg_Click(object sender, EventArgs e)
-        {
-            var identityDBContext = new IdentityDbContext("IqahConnectionString5");
-            var roleStore = new RoleStore<IdentityRole>(identityDBContext);
-            var roleManager = new RoleManager<IdentityRole>(roleStore);
-            var userStore = new UserStore<IdentityUser>(identityDBContext);
-            var manager = new UserManager<IdentityUser>(userStore);
-
-            IdentityRole adminRole = new IdentityRole("RegisteredUser");
-            roleManager.Create(adminRole);
-            var user = new IdentityUser()
-            {
-                UserName = txtname.Text,
-                Email = txtname.Text,
-            };
-
-            IdentityResult result = manager.Create(user, txtpswd.Text);
-            if (result.Succeeded)
-            {
-                manager.AddToRole(user.Id, "RegisteredUser");
-                manager.Update(user);
-                litResult.Text = "Registration Successful"; //todo: Log in Then
-            }
-            else
-            {
-                litResult.Text = "An error has occured: " + result.Errors.FirstOrDefault();
-            }
-        }
 
         protected void btnLog_Click(object sender, EventArgs e)
         {
@@ -80,13 +52,35 @@ namespace LingerieCO5027
                     Response.Redirect("~/Admin/Index.aspx");
                 }
             }
-        }
 
-        protected void txtlogpswd_TextChanged(object sender, EventArgs e)
+        }
+        protected void btnReg_Click()
         {
+            var identityDBContext = new IdentityDbContext("IqahConnectionString5");
+            var roleStore = new RoleStore<IdentityRole>(identityDBContext);
+            var roleManager = new RoleManager<IdentityRole>(roleStore);
+            var userStore = new UserStore<IdentityUser>(identityDBContext);
+            var manager = new UserManager<IdentityUser>(userStore);
 
+            IdentityRole adminRole = new IdentityRole("RegisteredUser");
+            roleManager.Create(adminRole);
+            var user = new IdentityUser()
+            {
+                UserName = txtname.Text,
+                Email = txtname.Text,
+            };
+
+            IdentityResult result = manager.Create(user, txtpswd.Text);
+            if (result.Succeeded)
+            {
+                manager.AddToRole(user.Id, "RegisteredUser");
+                manager.Update(user);
+                litResult.Text = "Registration Successful"; //todo: Log in Then
+            }
+            else
+            {
+                litResult.Text = "An error has occured: " + result.Errors.FirstOrDefault();
+            }
         }
     }
-    }
-        
- 
+}

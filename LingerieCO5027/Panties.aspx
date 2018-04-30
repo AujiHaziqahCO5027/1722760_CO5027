@@ -4,10 +4,13 @@
         .auto-style1 {
             width: 328px;
         }
+    .auto-style2 {
+        text-align: center;
+    }
     </style>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
-    <h2 style="color: #FF5050; background-color: #FFFFFF">Sexy Panties</h2>
+    <h2 style="color: #FF5050; background-color: #FFFFFF" class="auto-style2">Sexy Panties</h2>
     <h4 style="text-align: center">Silken Elegance's Lingerie,
         offers the Best Selling Panties, Thongs, Cheekies, Knickers and Naughty Knickers.
 </h4>

@@ -1,13 +1,22 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/L.Master" AutoEventWireup="true" CodeBehind="Contact.aspx.cs" Inherits="LingerieCO5027.Contact" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
+    <style type="text/css">
+        .auto-style1 {
+            font-size: smaller;
+            text-align: center;
+        }
+        .auto-style2 {
+            text-align: center;
+        }
+    </style>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
 
     <div class="container">
   <div style="text-align:center">
-       <div class="r"
-       <h2>Contact Us</h2>
-    <p><strong>If you have any enquiry, YOU can simply contact us!</strong></p>
+       <div class="row">
+       <h2 style="color: #FF5050; background-color: #FFFFFF" class="auto-style2"><strong><span class="auto-style1">Contact Us</span></strong></h2>
+           <p><strong>If you have any enquiry, YOU can simply contact us!</strong></p>
          <p><asp:Label ID="LabelName" runat="server" Text="Name" style="font-weight: 700"></asp:Label></p>
          <p><asp:TextBox ID="TextBoxName" runat="server" Height="25px" Width="360px" MaxLength="20"></asp:TextBox></p>
             <p><asp:RequiredFieldValidator ID="RequiredFieldValidatorName" runat="server" ErrorMessage="*Please enter your Name" ControlToValidate="TextBoxName"></asp:RequiredFieldValidator></p>
@@ -55,4 +64,5 @@
 <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD5DBRhs-Z6iFbS9KUsbyeHk8UptAjHC4g&callback=myMap"></script>
     
         
+    </div>
 </asp:Content>

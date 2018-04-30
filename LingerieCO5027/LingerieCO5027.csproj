@@ -180,7 +180,6 @@
     <None Include="Properties\PublishProfiles\CustomProfile.pubxml" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="location.js" />
-    <Content Include="login.aspx" />
     <Content Include="Panties.aspx" />
     <Content Include="pantiesimage\DARLA PEARL AND LACE PANTY.jpg" />
     <Content Include="pantiesimage\ExxtremeMiniGString.jpg" />
@@ -190,12 +189,16 @@
     <Content Include="pantiesimage\STEPHANIE EYELASH LACE GARTER THONG.jpg" />
     <Content Include="pantiesimage\TatianaPearlNaughtyKnicker.jpg" />
     <Content Include="pantiesimage\VERONIKA LACE NAUGHTY KNICKER.jpg" />
+    <Content Include="randomimage\addproduct.png" />
     <Content Include="randomimage\background.jpg" />
     <Content Include="randomimage\CAT-BRAS-GLOBAL.jpg" />
+    <Content Include="randomimage\deleteproduct.png" />
+    <Content Include="randomimage\editproduct.png" />
     <Content Include="randomimage\LYDIA ROSE BIKINI.jpg" />
     <Content Include="randomimage\newarrivalbridalslide1.png" />
     <Content Include="randomimage\openstrappypanty1.jpg" />
     <Content Include="randomimage\openstrapypanty2.jpg" />
+    <Content Include="randomimage\shoppingcartimage.png" />
     <Content Include="randomimage\STEFFI GARTERED PANTY.jpg" />
     <Content Include="randomimage\strappycheekygarterpanty1.jpg" />
     <Content Include="randomimage\strappycheekygarterpanty2.jpg" />
@@ -235,6 +238,7 @@
     <Content Include="Scripts\WebForms\WebForms.js" />
     <Content Include="Scripts\WebForms\WebParts.js" />
     <Content Include="Scripts\WebForms\WebUIValidation.js" />
+    <Content Include="Signin.aspx" />
     <Content Include="ViewSwitcher.ascx" />
     <Content Include="Web.config">
       <SubType>Designer</SubType>
@@ -318,13 +322,6 @@
     <Compile Include="L.Master.designer.cs">
       <DependentUpon>L.Master</DependentUpon>
     </Compile>
-    <Compile Include="login.aspx.cs">
-      <DependentUpon>login.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="login.aspx.designer.cs">
-      <DependentUpon>login.aspx</DependentUpon>
-    </Compile>
     <Compile Include="Panties.aspx.cs">
       <DependentUpon>Panties.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -333,6 +330,13 @@
       <DependentUpon>Panties.aspx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Signin.aspx.cs">
+      <DependentUpon>Signin.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Signin.aspx.designer.cs">
+      <DependentUpon>Signin.aspx</DependentUpon>
+    </Compile>
     <Compile Include="ViewSwitcher.ascx.cs">
       <DependentUpon>ViewSwitcher.ascx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>

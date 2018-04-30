@@ -13,15 +13,6 @@ namespace LingerieCO5027.Admin {
     public partial class UploadImage {
         
         /// <summary>
-        /// Imgupcontrol control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.FileUpload Imgupcontrol;
-        
-        /// <summary>
         /// Img control.
         /// </summary>
         /// <remarks>
@@ -29,6 +20,15 @@ namespace LingerieCO5027.Admin {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Image Img;
+        
+        /// <summary>
+        /// Imgupcontrol control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.FileUpload Imgupcontrol;
         
         /// <summary>
         /// btnUpload control.
