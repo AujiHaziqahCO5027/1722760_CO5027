@@ -6,8 +6,13 @@
         <HeaderTemplate><table></table></HeaderTemplate>
             <ItemTemplate>
                 <td>
+                    <li>
                     <p><img src="/image/<%#Eval("ProductId") %>.jpg" alt="<%#Eval("ProductId") %>" width="200" height="200" /></p>
-        
+                    <a href="<%#Eval("ProductId", "Product.aspx?ProductId={0}")%>"><%#Eval("ProductName")%>"</a>
+                        <%#Eval("ProdcutPrice")%>
+                        <%#Eval("Quantity")%>
+                        </li>
+
                 </td>
 
             </ItemTemplate>

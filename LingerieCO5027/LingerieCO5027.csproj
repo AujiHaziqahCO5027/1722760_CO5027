@@ -176,6 +176,10 @@
     <Content Include="Admin\List.aspx" />
     <Content Include="Admin\Edit.aspx" />
     <Content Include="Bras.aspx" />
+    <Content Include="bras\HOLLYWOOD EXXTREME CLEAVAGE LACE FULL FIGURE BRA1.jpg" />
+    <Content Include="bras\KIKKI LONGLINE CONTOUR BRA1.jpg" />
+    <Content Include="bras\KYRA HIGH SHINE ZIPPER BRA SET1.jpg" />
+    <Content Include="bras\TONYA MESH AND LACE NAUGHTY BRA1.jpg" />
     <Content Include="Contact.aspx" />
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
@@ -209,6 +213,7 @@
     <Content Include="pantiesimage\STEPHANIE EYELASH LACE GARTER THONG.jpg" />
     <Content Include="pantiesimage\TatianaPearlNaughtyKnicker.jpg" />
     <Content Include="pantiesimage\VERONIKA LACE NAUGHTY KNICKER.jpg" />
+    <Content Include="Product.aspx" />
     <Content Include="randomimage\addproduct.png" />
     <Content Include="randomimage\background.jpg" />
     <Content Include="randomimage\CAT-BRAS-GLOBAL.jpg" />
@@ -230,6 +235,7 @@
     <Content Include="randomimage\TatianaPearlNaughtyKnicker.jpg" />
     <Content Include="randomimage\unlinedlacebrawithcutouts1.jpg" />
     <Content Include="randomimage\unlinedlacebrawithcutouts2.jpg" />
+    <Content Include="Register.aspx" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
     <Content Include="Scripts\jquery-1.10.2.js" />
@@ -258,7 +264,6 @@
     <Content Include="Scripts\WebForms\WebForms.js" />
     <Content Include="Scripts\WebForms\WebParts.js" />
     <Content Include="Scripts\WebForms\WebUIValidation.js" />
-    <Content Include="Signin.aspx" />
     <Content Include="ViewSwitcher.ascx" />
     <Content Include="Web.config">
       <SubType>Designer</SubType>
@@ -355,13 +360,20 @@
     <Compile Include="Panties.aspx.designer.cs">
       <DependentUpon>Panties.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Signin.aspx.cs">
-      <DependentUpon>Signin.aspx</DependentUpon>
+    <Compile Include="Product.aspx.cs">
+      <DependentUpon>Product.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Signin.aspx.designer.cs">
-      <DependentUpon>Signin.aspx</DependentUpon>
+    <Compile Include="Product.aspx.designer.cs">
+      <DependentUpon>Product.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Register.aspx.cs">
+      <DependentUpon>Register.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Register.aspx.designer.cs">
+      <DependentUpon>Register.aspx</DependentUpon>
     </Compile>
     <Compile Include="Startup\Startup.cs" />
     <Compile Include="ViewSwitcher.ascx.cs">

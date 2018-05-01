@@ -14,19 +14,19 @@ namespace LingerieCO5027.Admin
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            string ProductId = Request.QueryString["Id"];
+            string ProductId = Request.QueryString["ProductId"];
             string filename = ProductId + ".jpg";
 
-            Img.ImageUrl = "../image/" + filename;
+            Img.ImageUrl = "/image/" + filename;
 
         }
 
         protected void btnUpload_Click(object sender, EventArgs e)
         {
-            string ProductId = Request.QueryString["Id"];
+            string ProductId = Request.QueryString["ProductId"];
 
             string filename = ProductId + ".jpg";
-            string saveLocation = Server.MapPath("../image/" + filename);
+            string saveLocation = Server.MapPath("~/image/" + filename);
 
             Imgupcontrol.SaveAs(saveLocation);
         }

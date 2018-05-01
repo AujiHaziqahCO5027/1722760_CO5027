@@ -32,11 +32,12 @@
 
 <li><a href="~/Panties.aspx" runat="server">Panties</a></li>
 
-<li><a href="~/Signin.aspx" runat="server">Register & Login</a></li>
-
  <li><a href="~/Contact.aspx" runat="server">Contact Us</a></li>
 
  <li><a href="~/Admin/Index.aspx" runat="server">Admin</a></li>
+
+ <li><a href="~/Register.aspx" runat="server">Register
+     </a></li>
  
  </ul>
     </div>
