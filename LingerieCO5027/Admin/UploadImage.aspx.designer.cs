@@ -10,7 +10,7 @@
 namespace LingerieCO5027.Admin {
     
     
-    public partial class UploadImage {
+    public partial class image {
         
         /// <summary>
         /// Img control.

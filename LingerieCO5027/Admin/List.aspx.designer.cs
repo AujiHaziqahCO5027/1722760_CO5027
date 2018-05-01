@@ -10,7 +10,7 @@
 namespace LingerieCO5027.Admin {
     
     
-    public partial class List {
+    public partial class list1 {
         
         /// <summary>
         /// GridView1 control.

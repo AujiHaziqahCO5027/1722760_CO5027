@@ -10,7 +10,7 @@
 namespace LingerieCO5027.Admin {
     
     
-    public partial class Edit {
+    public partial class test {
         
         /// <summary>
         /// FormView1 control.

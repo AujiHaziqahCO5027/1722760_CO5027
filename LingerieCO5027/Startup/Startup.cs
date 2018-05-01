@@ -2,14 +2,14 @@
 using System.Threading.Tasks;
 using Microsoft.Owin;
 using Owin;
-using Microsoft.AspNet.Identity;
 using Microsoft.Owin.Security.Cookies;
+using Microsoft.AspNet.Identity;
 
-[assembly: OwinStartup(typeof(LingerieCO5027.App_Code.Startup1))]
+[assembly: OwinStartup(typeof(LingerieCO5027.Startup.Startup))]
 
-namespace LingerieCO5027.App_Code
+namespace LingerieCO5027.Startup
 {
-    public class Startup1
+    public class Startup
     {
         public void Configuration(IAppBuilder app)
         {
@@ -17,7 +17,7 @@ namespace LingerieCO5027.App_Code
             app.UseCookieAuthentication(new CookieAuthenticationOptions
             {
                 AuthenticationType = DefaultAuthenticationTypes.ApplicationCookie,
-                LoginPath = new PathString("/login.aspx")
+                LoginPath = new PathString("/Login.aspx")
             });
         }
     }

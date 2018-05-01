@@ -7,17 +7,15 @@ using System.Web.UI.WebControls;
 using Microsoft.AspNet.Identity;
 using Microsoft.AspNet.Identity.EntityFramework;
 using Microsoft.Owin.Security;
-using Microsoft.AspNet.Identity.Owin;
 
 namespace LingerieCO5027
 {
-    public partial class Signin : System.Web.UI.Page
+    public partial class Login : System.Web.UI.Page
     {
         protected void Page_Load(object sender, EventArgs e)
         {
 
         }
-
 
         protected void btnLog_Click(object sender, EventArgs e)
         {
@@ -41,9 +39,9 @@ namespace LingerieCO5027
             var userIdentity = usermanager.CreateIdentity(user, DefaultAuthenticationTypes.ApplicationCookie);
             authenticationManager.SignIn(new AuthenticationProperties() { }, userIdentity);
 
-            if (Request.QueryString["~/Signin.aspx"] != null)
+            if (Request.QueryString["~/Login.aspx"] != null)
             {
-                Response.Redirect(Request.QueryString["~/Signin.aspx"]);
+                Response.Redirect(Request.QueryString["~/Login.aspx"]);
             }
             else
             {
@@ -53,40 +51,6 @@ namespace LingerieCO5027
                     Response.Redirect("~/Admin/Index.aspx");
                 }
             }
-
-        }
-        protected void btnReg_Click()
-        {
-            var identityDBContext = new IdentityDbContext("IqahConnectionString5");
-            var roleStore = new RoleStore<IdentityRole>(identityDBContext);
-            var roleManager = new RoleManager<IdentityRole>(roleStore);
-            var userStore = new UserStore<IdentityUser>(identityDBContext);
-            var manager = new UserManager<IdentityUser>(userStore);
-
-            IdentityRole adminRole = new IdentityRole("RegisteredUser");
-            roleManager.Create(adminRole);
-            var user = new IdentityUser()
-            {
-                UserName = txtname.Text,
-                Email = txtname.Text,
-            };
-
-            IdentityResult result = manager.Create(user, txtpswd.Text);
-            if (result.Succeeded)
-            {
-                manager.AddToRole(user.Id, "RegisteredUser");
-                manager.Update(user);
-                litResult.Text = "Registration Successful"; //todo: Log in Then
-            }
-            else
-            {
-                litResult.Text = "An error has occured: " + result.Errors.FirstOrDefault();
-            }
-        }
-
-        protected void btnReg_Click1(object sender, EventArgs e)
-        {
-
         }
     }
 }

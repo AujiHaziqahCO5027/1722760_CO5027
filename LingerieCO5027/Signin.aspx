@@ -61,7 +61,7 @@
 &nbsp;<br />
             <asp:Literal ID="litResult" runat="server"></asp:Literal>
         <br />
-            <asp:Button ID="btnReg" runat="server" Text="Register" />
+            <asp:Button ID="btnReg" runat="server" Text="Register" OnClick="btnReg_Click1" />
         <br />
         &nbsp;<br />
         <br/>
