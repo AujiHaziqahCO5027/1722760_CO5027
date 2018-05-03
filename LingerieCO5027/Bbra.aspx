@@ -4,7 +4,7 @@
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
     <h2 style="color: #FF5050; background-color: #FFFFFF" class="auto-style1">All Sexy Bras</h2>
     <h4 style="text-align: center">Silken Elegance's Lingerie,
-        offers the Best Selling Panties, Thongs, Cheekies, Knickers and Naughty Knickers.
+        offers Best Selection of New Sexy Bras, Best Selling Bras, Push-Up Bras, Strapless Bras, Multi-Way Bras and Bra Sets.
 </h4>
     <table class="center">
   <tr>
