@@ -35,4 +35,9 @@
             <asp:Parameter Name="original_Quantity" Type="Int32" />
         </UpdateParameters>
     </asp:SqlDataSource>
+    <p>
+        <asp:Button ID="btnLogout" runat="server" Text="Logout" OnClick="btnLogout_Click" />
+        </p>
+
+    
 </asp:Content>

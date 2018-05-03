@@ -13,5 +13,16 @@ namespace LingerieCO5027.Admin
         {
 
         }
+
+        protected void SqlDataSource1_Selecting(object sender, SqlDataSourceSelectingEventArgs e)
+        {
+
+        }
+
+        protected void btnLogout_Click(object sender, EventArgs e)
+        {
+            HttpContext.Current.GetOwinContext().Authentication.SignOut(Microsoft.AspNet.Identity.DefaultAuthenticationTypes.ApplicationCookie);
+            Response.Redirect("~/Login.aspx");
+        }
     }
 }

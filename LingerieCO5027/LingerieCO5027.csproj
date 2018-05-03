@@ -170,16 +170,20 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="About.aspx" />
     <Content Include="Admin\Add.aspx" />
     <Content Include="Admin\UploadImage.aspx" />
     <Content Include="Admin\List.aspx" />
     <Content Include="Admin\Edit.aspx" />
-    <Content Include="Bras.aspx" />
+    <Content Include="Bbra.aspx" />
+    <Content Include="bras\ELYSIA SATIN AND LACE BRA SET1.jpg" />
     <Content Include="bras\HOLLYWOOD EXXTREME CLEAVAGE LACE FULL FIGURE BRA1.jpg" />
+    <Content Include="bras\JESSICA BRALETTE1.jpg" />
     <Content Include="bras\KIKKI LONGLINE CONTOUR BRA1.jpg" />
     <Content Include="bras\KYRA HIGH SHINE ZIPPER BRA SET1.jpg" />
+    <Content Include="bras\LUISA LOU STRAPPY BRALETTE1.jpg" />
+    <Content Include="bras\PEARLE OPEN CUP BRA SET1.jpg" />
     <Content Include="bras\TONYA MESH AND LACE NAUGHTY BRA1.jpg" />
+    <Content Include="bras\VALERIE LACE PUSH UP BRA1.jpg" />
     <Content Include="Contact.aspx" />
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
@@ -219,6 +223,13 @@
     <Content Include="randomimage\CAT-BRAS-GLOBAL.jpg" />
     <Content Include="randomimage\deleteproduct.png" />
     <Content Include="randomimage\editproduct.png" />
+    <Content Include="randomimage\lg1.jpg" />
+    <Content Include="randomimage\lg2.jpg" />
+    <Content Include="randomimage\lg3.jpg" />
+    <Content Include="randomimage\lg4.jpg" />
+    <Content Include="randomimage\lg5.jpg" />
+    <Content Include="randomimage\lg6.jpg" />
+    <Content Include="randomimage\lg7.jpg" />
     <Content Include="randomimage\LYDIA ROSE BIKINI.jpg" />
     <Content Include="randomimage\newarrivalbridalslide1.png" />
     <Content Include="randomimage\openstrappypanty1.jpg" />
@@ -235,6 +246,7 @@
     <Content Include="randomimage\TatianaPearlNaughtyKnicker.jpg" />
     <Content Include="randomimage\unlinedlacebrawithcutouts1.jpg" />
     <Content Include="randomimage\unlinedlacebrawithcutouts2.jpg" />
+    <Content Include="randomimage\w2.jpg" />
     <Content Include="Register.aspx" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
@@ -300,20 +312,13 @@
       <DependentUpon>Edit.aspx</DependentUpon>
     </Compile>
     <Compile Include="App_Start\BundleConfig.cs" />
-    <Compile Include="About.aspx.cs">
-      <DependentUpon>About.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="About.aspx.designer.cs">
-      <DependentUpon>About.aspx</DependentUpon>
-    </Compile>
     <Compile Include="App_Start\RouteConfig.cs" />
-    <Compile Include="Bras.aspx.cs">
-      <DependentUpon>Bras.aspx</DependentUpon>
+    <Compile Include="Bbra.aspx.cs">
+      <DependentUpon>Bbra.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Bras.aspx.designer.cs">
-      <DependentUpon>Bras.aspx</DependentUpon>
+    <Compile Include="Bbra.aspx.designer.cs">
+      <DependentUpon>Bbra.aspx</DependentUpon>
     </Compile>
     <Compile Include="Contact.aspx.cs">
       <DependentUpon>Contact.aspx</DependentUpon>

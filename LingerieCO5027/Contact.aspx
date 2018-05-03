@@ -8,6 +8,13 @@
         .auto-style2 {
             text-align: center;
         }
+        .auto-style3 {
+            font-size: medium;
+            text-align: center;
+        }
+        .auto-style4 {
+            font-size: xx-large;
+        }
     </style>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
@@ -15,7 +22,7 @@
     <div class="container">
   <div style="text-align:center">
        <div class="row">
-       <h2 style="color: #FF5050; background-color: #FFFFFF" class="auto-style2"><strong><span class="auto-style1">Contact Us</span></strong></h2>
+       <h1 style="color: #FF5050; background-color: #FFFFFF"><strong><span class="auto-style1">Contact Us</span></strong></h1>
            <p><strong>If you have any enquiry, YOU can simply contact us!</strong></p>
          <p><asp:Label ID="LabelName" runat="server" Text="Name" style="font-weight: 700"></asp:Label></p>
          <p><asp:TextBox ID="TextBoxName" runat="server" Height="25px" Width="360px" MaxLength="20"></asp:TextBox></p>
@@ -44,16 +51,24 @@
 
         </div>
 
+      
+     <table>
+    <tr>
+    <th style="height: 32px; width: 150px">Find Us Here</th>
+    <th style="height: 32px; width: 150px">Contact</th>
+    </tr>
 
-    <h3>Find Us Here:</h3>
 
-<div id="map" style="width:100%;height:400px;"></div>
+  <tr>
+  	<td style="width: 100px" class="auto-style1">
+
+<div id="map" style="width:400px;height:400px;"></div>
 
 <script>
     function myMap() {
         var mapCanvas = document.getElementById("map");
         var mapOptions = {
-            center: new google.maps.LatLng(51.5, -0.2), zoom: 10
+            center: new google.maps.LatLng(51.5, -0.2), zoom: 19
         };
         var map = new google.maps.Map(mapCanvas, mapOptions);
         var marker = new google.maps.Marker({ position: myCenter });
@@ -63,6 +78,17 @@
 
 <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD5DBRhs-Z6iFbS9KUsbyeHk8UptAjHC4g&callback=myMap"></script>
     
-        
+            </td>
+    
+         <td style="width: 100px" class="auto-style1">
+        <div class="auto-style3">
+          <ul style="width: 454px">  <strong><span class="auto-style4">Operating Hours: Open Everyday
+              8.00am til 9pm except Public Holiday</span>
+    </strong></ul>
+    </table>
     </div>
+
+    
+
+    
 </asp:Content>

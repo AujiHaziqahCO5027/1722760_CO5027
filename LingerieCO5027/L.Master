@@ -22,13 +22,14 @@
 <div id="header">
     </div>
     <form id="form1" runat="server">
-    <h1>S i l k e n     E l e g a n c e </h1>
-        <div class="banner"></div>
+ <div class="banner">
+     <img src="randomimage/w2.jpg" alt="Img4" style="height: 333px; width: 793px" /></div>
+        <br />
 <div class="nav">
       <ul>
 <li><a href="~/Default.aspx" runat="server">Lingerie</a></li>
 
-<li><a href="~/Bras.aspx" runat="server">Bra & Stockings</a></li>
+<li><a href="~/Bbra.aspx" runat="server">Bras</a></li>
 
 <li><a href="~/Panties.aspx" runat="server">Panties</a></li>
 
@@ -38,9 +39,66 @@
 
  <li><a href="~/Register.aspx" runat="server">Register
      </a></li>
- 
+
  </ul>
-    </div>
+  <div class="slideshow-container">
+
+<div class="mySlides fade">
+  <div class="numbertext">1 / 4</div>
+  <img src="randomimage/lg1.jpg" alt="Img1" style="width:100%">
+  <div class="text">Beautiful begins Underneath</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">2 / 4</div>
+    <img src="randomimage/lg2.jpg" alt="Img2" style="width:100%">
+  <div class="text">Something sexy, Something Sweet, Something to Knock Him off His Feet</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">3 / 4</div>
+    <img src="randomimage/lg3.jpg" alt="Img2" style="width:100%">
+  <div class="text">Sexy is the confidence YOU carry</div>
+</div>
+
+      <div class="mySlides fade">
+  <div class="numbertext">4 / 4</div>
+          <img src="randomimage/lg7.jg" alt="Img3" style="width:100%">
+  <div class="text">Life is too short to wear boring undies</div>
+</div>
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+</div>
+        <script>
+var slideIndex = 0;
+showSlides();
+
+function showSlides() {
+    var i;
+    var slides = document.getElementsByClassName("mySlides");
+    var dots = document.getElementsByClassName("dot");
+    for (i = 0; i < slides.length; i++) {
+       slides[i].style.display = "none";  
+    }
+    slideIndex++;
+    if (slideIndex > slides.length) {slideIndex = 1}    
+    for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+    }
+    slides[slideIndex-1].style.display = "block";  
+    dots[slideIndex-1].className += " active";
+    setTimeout(showSlides, 2000); // Change image every 2 seconds
+}
+</script>
+       
+
+       
      
        
         

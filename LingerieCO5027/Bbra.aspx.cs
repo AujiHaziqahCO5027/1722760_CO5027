@@ -7,7 +7,7 @@ using System.Web.UI.WebControls;
 
 namespace LingerieCO5027
 {
-    public partial class About : Page
+    public partial class Bbra : System.Web.UI.Page
     {
         protected void Page_Load(object sender, EventArgs e)
         {

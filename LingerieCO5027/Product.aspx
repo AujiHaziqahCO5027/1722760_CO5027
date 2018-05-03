@@ -37,7 +37,9 @@
         </InsertItemTemplate>
         <ItemTemplate>
 
-            <img src="/image/<%#Eval("ProductId") %>.jpg" alt="<%#Eval("ProductId") %>" width="200" height="200" />
+            <br />
+            <img src="/image/<%#Eval("ProductId") %>.jpg" alt="<%#Eval("ProductId") %>" width="300" height="400" />
+            <br />
 
             ProductId:
             <asp:Label ID="ProductIdLabel" runat="server" Text='<%# Eval("ProductId") %>' />
