@@ -8,17 +8,22 @@
         <HeaderTemplate></HeaderTemplate>
             <ItemTemplate>
                 
-                    
-             
-                <ul class="repeater">
+             <ul class="repeater">
                     <li>
-                    <p><img src="/image/<%#Eval("ProductId") %>.jpg" alt="<%#Eval("ProductId") %>" width="300" height="400" /></p>
+                        <asp:Image ID="Image1" runat="server" ImageUrl='<%#"~/image/" + Eval ("ProductId") + ".jpg" %>' width="300" height="400" />
+            
                     <a href="<%#Eval("ProductId", "Product.aspx?ProductId={0}")%>">
                         <h3>Product Name:</h3><%#Eval("ProductName")%></a>
                       <p><h3>Product Price</h3> <%#Eval("ProdcutPrice")%></p> 
                        <p><h3>Quantity</h3> <%#Eval("Quantity")%></p>
                     </li>
                  </ul>
+
+
+
+
+
+                
 
 
             </ItemTemplate>

@@ -82,8 +82,10 @@
     
          <td style="width: 100px" class="auto-style1">
         <div class="auto-style3">
-          <ul style="width: 454px">  <strong><span class="auto-style4">Operating Hours: Open Everyday
-              8.00am til 9pm except Public Holiday</span>
+          <ul style="width: 454px">  <strong><span class="auto-style4" style="color: #FF5050">Operating Hours: <p>Open Everyday
+              8.00am til 9pm except Public Holiday</p></span>
+              <p>Email: silkenelegancelingerie@live.com</p>
+              <p>Phone: +6737209208</p>
     </strong></ul>
     </table>
     </div>

@@ -9,7 +9,7 @@
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
     <h2 style="color: #FF5050; background-color: #FFFFFF" class="auto-style2">Welcome Admin!</h2>
-    <h3>What would you like to do?</h3>
+  
 
     <table>
          <tr>

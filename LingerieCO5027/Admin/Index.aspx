@@ -12,7 +12,7 @@
     <table>
         <tr>
    <td class="auto-style1"><a href="~/Admin/Add.aspx" runat="server">Add Products</a></td> 
-    <td class="auto-style1"><a href="~/Admin/test.aspx" runat="server">Edit Product</a></td>
+    <td class="auto-style1"><a href="~/Admin/Edit.aspx" runat="server">Edit Product</a></td>
     <td class="auto-style1"><a href="~/Admin/List.aspx" runat="server">List of Products</a></td>
             </tr>
         </table>

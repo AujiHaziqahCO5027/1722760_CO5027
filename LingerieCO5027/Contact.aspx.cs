@@ -30,7 +30,7 @@ namespace LingerieCO5027
 
             MailMessage msg = new MailMessage();
             msg.From = new MailAddress(TextBoxEmail.Text);
-            msg.To.Add(new MailAddress("miniwerks.info@gmail.com"));
+            msg.To.Add(new MailAddress("heyitsmeiqah@gmail.com"));
 
             msg.Subject = TextBoxSubject.Text;
             msg.IsBodyHtml = true;

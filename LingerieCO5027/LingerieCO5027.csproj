@@ -200,6 +200,15 @@
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
     <Content Include="Admin\Index.aspx" />
+    <Content Include="image\1.jpg" />
+    <Content Include="image\2.jpg" />
+    <Content Include="image\3.jpg" />
+    <Content Include="image\4.jpg" />
+    <Content Include="image\5.jpg" />
+    <Content Include="image\6.jpg" />
+    <Content Include="image\7.jpg" />
+    <Content Include="image\8.jpg" />
+    <Content Include="image\9.jpg" />
     <Content Include="L.Master" />
     <Content Include="Admin\Web.config">
       <SubType>Designer</SubType>
@@ -391,7 +400,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="image\" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
