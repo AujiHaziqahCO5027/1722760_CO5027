@@ -14,7 +14,7 @@ namespace LingerieCO5027
         {
 
         }
-
+        
         protected void btnSendE_Click(object sender, EventArgs e)
         {
             //Sends email using a mail server that requires login credentials and a secure connections, e.g. gmail
