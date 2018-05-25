@@ -17,38 +17,36 @@ namespace LingerieCO5027
 
         protected void btnSendE_Click(object sender, EventArgs e)
         {
-            SmtpClient client = new SmtpClient();
-            client.DeliveryMethod = SmtpDeliveryMethod.Network;
-            client.EnableSsl = true;
-            client.Host = "smtp.gmail.com";
-            client.Port = 587;
+            //Sends email using a mail server that requires login credentials and a secure connections, e.g. gmail
 
-            // Smtp authentication
-            System.Net.NetworkCredential userpass = new System.Net.NetworkCredential("heyitsmeiqah@gmail.com", "ilovefood@1234");
-            client.UseDefaultCredentials = false;
-            client.Credentials = userpass;
+            //create mail client and message with to and from address, and set message subject and body
 
-            MailMessage msg = new MailMessage();
-            msg.From = new MailAddress(TextBoxEmail.Text);
-            msg.To.Add(new MailAddress("heyitsmeiqah@gmail.com"));
-
+            //create mail client and message with to and from address, and set message subject and body
+            SmtpClient smtpClient = new SmtpClient();
+            MailMessage msg = new MailMessage("onlyschoolpurposes@gmail.com", "onlyschoolpurposes@gmail.com");
             msg.Subject = TextBoxSubject.Text;
-            msg.IsBodyHtml = true;
-            msg.Body = string.Format("From: " + TextBoxName.Text + ",   Email: " + TextBoxEmail.Text + ",   Message: " + TextBoxMessage.Text);
+            msg.Body = TextBoxName.Text;
+
+            //settings specific to the mail service, e.g. server location, port number and that ssl is required
+            smtpClient.Host = "smtp.gmail.com";
+            smtpClient.Port = 587;
+            smtpClient.EnableSsl = true;
+
+            //create credentials - e.g. username and password for the account
+            System.Net.NetworkCredential credentials = new System.Net.NetworkCredential("onlyschoolpurposes@gmail.com", "lcb12345");
+            smtpClient.Credentials = credentials;
+            msg = new MailMessage("onlyschoolpurposes@gmail.com", "onlyschoolpurposes@gmail.com");
 
             try
             {
-                client.Send(msg);
-                LiteralMessage.Text = "Enquiry successfully sent.";
+                smtpClient.Send(msg);
+                LiteralMessage.Text = "<p>Success, mail sent using SMTP with secure connection and credentials</p>";
             }
             catch (Exception ex)
             {
-                LiteralMessage.Text = "Enquiry failed to be sent." + ex.Message;
+                //display the full error to the user
+                LiteralMessage.Text = "<p>Send failed:" + ex.Message + ":" + ex.InnerException + "</p>";
             }
-            TextBoxName.Text = "";
-            TextBoxEmail.Text = "";
-            TextBoxSubject.Text = "";
-            TextBoxMessage.Text = "";
         }
     }
 }
